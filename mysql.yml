@@ -1,8 +1,9 @@
- - name: PlaybookDemo
-   hosts: localhost
-   tasks:
-     - name: ensure apache is installed
-       ansible.builtin.apt:
-         name: Apache
-         state: present
-       become:true
+---
+  - name: Install MySQL
+    hosts: localhost
+    tasks:
+    - name: apt  Install mysql package in ansible
+      ansible.builtin.apt:
+        name: mysql-server
+        state: present
+      become: true

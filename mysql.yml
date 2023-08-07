@@ -9,3 +9,4 @@
       ansible.builtin.package:
         name: mysql-server
         state: present
+	use: apt

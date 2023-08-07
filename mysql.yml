@@ -6,6 +6,6 @@
     gather_facts: false
     tasks:
     - name: apt  Install mysql package in ansible
-      package:
+      ansible.builtin.package:
         name: mysql-server
         state: present

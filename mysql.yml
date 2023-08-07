@@ -2,7 +2,6 @@
   - name: Install MySQL
     hosts: localhost
     become:true
-    gather_facts: true
     tasks:
     - name: apt  Install mysql package in ansible
       ansible.builtin.yum:

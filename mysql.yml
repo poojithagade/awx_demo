@@ -7,6 +7,6 @@
     tasks:
     - name: apt  Install mysql package in ansible
       ansible.builtin.package:
-        name: mysql-server
+        name: apache2
         state: present
         use: dnf

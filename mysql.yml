@@ -1,6 +1,8 @@
 ---
   - name: Install MySQL
     hosts: localhost
+    become: yes
+    become_user: ec2-user
     tasks:
     - name: apt  Install mysql package in ansible
       ansible.builtin.yum:

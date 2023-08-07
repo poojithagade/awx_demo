@@ -6,4 +6,3 @@
       ansible.builtin.apt:
         name: mysql-server
         state: present
-      become: true

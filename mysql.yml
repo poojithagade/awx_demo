@@ -3,6 +3,6 @@
     hosts: localhost
     tasks:
     - name: apt  Install mysql package in ansible
-      ansible.builtin.apt:
+      ansible.builtin.yum:
         name: mysql-server
         state: present

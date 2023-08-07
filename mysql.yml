@@ -1,6 +1,6 @@
 ---
   - name: Install MySQL
-    hosts: localhost
+    hosts: 127.0.0.1
     become: yes
     become_user: root
     

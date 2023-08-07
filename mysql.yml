@@ -6,7 +6,7 @@
     #gather_facts: false
     tasks:
     - name: apt  Install mysql package in ansible
-      ansible.builtin.package:
+      apt:
         name: apache2
         state: present
         use: dnf

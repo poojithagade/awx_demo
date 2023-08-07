@@ -1,6 +1,7 @@
 ---
   - name: Install MySQL
     hosts: localhost
+    gather_facts: true
     become: yes
     become_user: root
     tasks:

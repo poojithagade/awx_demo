@@ -1,6 +1,9 @@
 ---
   - name: Install MySQL
     hosts: localhost
+    become=true
+    become_method=sudo
+    become_user=root
     gather_facts: true
     tasks:
     - name: apt  Install mysql package in ansible

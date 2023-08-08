@@ -2,7 +2,7 @@
   - name: Install MySQL
     hosts: 127.0.0.1
     become: yes
-    become_user: root
+    
     
     tasks:
     - name: apt  Install mysql package in ansible

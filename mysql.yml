@@ -7,6 +7,6 @@
     tasks:
     - name: apt  Install mysql package in ansible
       apt:
-        name: apache2
+        name: mysql-server
         state: present
 
